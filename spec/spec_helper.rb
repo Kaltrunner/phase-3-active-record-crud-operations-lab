@@ -1,4 +1,4 @@
-ENV['RACK_ENV'] = 'test'
+ENV["RACK_ENV"] = "test"
 require_relative "../config/environment"
 require "sinatra/activerecord/rake"
 
@@ -36,6 +36,6 @@ RSpec.configure do |config|
   config.mock_with :rspec do |mocks|
     mocks.verify_partial_doubles = true
   end
-  
+
   config.shared_context_metadata_behavior = :apply_to_host_groups
 end
